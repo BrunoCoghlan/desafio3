@@ -20,6 +20,7 @@ const db = async (query, values) => {
     return (result)
   } catch (error) {
     console.error('db_connect => db', error)
+    throw error
   }
 }
 // exportacion
